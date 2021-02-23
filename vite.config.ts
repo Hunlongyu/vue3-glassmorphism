@@ -10,12 +10,12 @@ export default defineConfig({
     }
   }), createTypes()],
   build: {
+    // outDir: 'docs', // 官网
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'vue3-glassmorphism',
       formats: ['es', 'umd']
     },
-    // outDir: 'docs',
     rollupOptions: {
       external: ['vue'],
       output: {
