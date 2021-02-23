@@ -40,7 +40,7 @@
       <footer class="footer">
         <h2>什么是 Glassmorphism ?</h2>
         <p>Glassmorphism 是流行的磨砂玻璃美学的统一名称. 该效果具有透明度的背景模糊, 并使用堆叠的图层显示界面的深度和上下文.</p>
-        <h3>使用方法: <a href="">官网文档</a></h3>
+        <h3>使用方法: <a href="https://github.com/Hunlongyu/vue3-glassmorphism">官网文档</a></h3>
       </footer>
     </div>
   </div>
@@ -48,8 +48,8 @@
 
 <script lang="ts">
 import VueSlider from 'vue-slider-component'
-// import { directive } from './index'
-import { directive } from 'vue3-glassmorphism'
+import { directive } from './index'
+// import { directive } from 'vue3-glassmorphism'
 import 'vue-slider-component/theme/default.css'
 import { defineComponent, ref, reactive } from 'vue'
 
