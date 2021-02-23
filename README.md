@@ -26,13 +26,13 @@ import glassmorphism from 'vue3-glassmorphism'
 app.use(glassmorphism)
 ```
 
-局部注册 / Partial registration (*.vue)
+<!-- 局部注册 / Partial registration (*.vue)
 ```js
 import { directive } from 'vue3-glassmorphism'
 directive: {
   glassmorphism: directive
 }
-```
+``` -->
 
 使用:
 ```html

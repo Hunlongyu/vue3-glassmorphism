@@ -10,9 +10,9 @@ const createTypes = () => {
     generateBundle () {
       fs.copyFile(currentPath, targetPath, err => {
         if (err) {
-          console.log('生成 types.d.ts 文件失败', err)
+          console.log('生成types.d.ts 文件失败', err)
         } else {
-          console.log('生成 types.d.ts 文件成功')
+          console.log('生成types.d.ts 文件成功')
         }
       })
     }
