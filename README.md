@@ -58,7 +58,7 @@ setup () {
 | -------- | -------------------- | ------- | ------- |
 | blur    | 背景模糊值 | Number  | `3`  |
 | opacity | 背景透明度 | Number | `0.2` |
-| color  | 背景颜色, 必填 | String | `#ffffff` or `#fff` |
+| color  | 背景颜色, 只支持十六进制字符串 | String | `#ffffff` or `#fff` |
 
 ## Project setup
 
