@@ -38,7 +38,7 @@ directive: {
 ```html
 <div v-glassmorphism="{ blur: 3, opacity: 0.2, color: '#fff' }">...</div>
 
-// 或者 / or
+// 或者 or
 
 <div v-glassmorphism=config>...</div>
 
