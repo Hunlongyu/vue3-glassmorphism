@@ -10,7 +10,7 @@
           <div class="icon icon2" v-glassmorphism=config>🔥</div>
           <div class="box" v-glassmorphism=config>
             <div class="logo">
-              <img src="./assets/logo.png" alt="">
+              <img src="https://cn.vuejs.org/images/logo.png" alt="">
             </div>
             <div class="name">Vue</div>
             <div class="describe">渐进式 JavaScript 框架</div>
