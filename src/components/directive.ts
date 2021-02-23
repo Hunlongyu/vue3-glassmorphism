@@ -1,4 +1,9 @@
-import { DirectiveBinding } from 'vue'
+import { 
+  DirectiveBinding,
+  ObjectDirective,
+  Plugin,
+  App
+} from 'vue'
 
 function hex2Rgba (color: string) {
   const reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/
@@ -39,7 +44,25 @@ const onUpdated = (el: HTMLElement, binding: DirectiveBinding) => {
   el.style['backdrop-filter'] = `blur(${blur}px)`
 }
 
-export default {
+export const directive: ObjectDirective = {
   mounted: onMounted,
   updated: onUpdated
+}
+
+const plugin: Plugin = {
+  install(Vue: App) {
+    Vue.directive('glassmorphism', directive)
+  }
+}
+
+export default plugin
+
+if (window.Vue) {
+  window.Vue.use(plugin);
+}
+
+declare global {
+  interface Window {
+    Vue: App;
+  }
 }

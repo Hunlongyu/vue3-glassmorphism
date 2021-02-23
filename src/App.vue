@@ -48,6 +48,8 @@
 
 <script lang="ts">
 import VueSlider from 'vue-slider-component'
+// import { directive } from './index'
+import { directive } from 'vue3-glassmorphism'
 import 'vue-slider-component/theme/default.css'
 import { defineComponent, ref, reactive } from 'vue'
 
@@ -55,6 +57,9 @@ export default defineComponent({
   name: 'App',
   components: {
     VueSlider
+  },
+  directives: {
+    'glassmorphism': directive
   },
   setup () {
     const blur = ref(3)
