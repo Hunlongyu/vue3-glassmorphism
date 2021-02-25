@@ -33,6 +33,8 @@
             <vue-slider v-model="transparency" :min="0.01" :max="1" :interval="0.01" :tooltip="'none'" @change="transparencyChangeEvent"></vue-slider>
           </div>
           <div class="color">
+            <!-- <div class="label">颜色</div> -->
+            <span class="label">颜色</span>
             <input type="color" id="head" v-model="currentColor" @input="colorChangeEvent()">
           </div>
         </div>
@@ -40,7 +42,7 @@
       <footer class="footer">
         <h2>什么是 Glassmorphism ?</h2>
         <p>Glassmorphism 是流行的磨砂玻璃美学的统一名称. 该效果具有透明度的背景模糊, 并使用堆叠的图层显示界面的深度和上下文.</p>
-        <h3>使用方法: <a href="https://github.com/Hunlongyu/vue3-glassmorphism">官网文档</a></h3>
+        <p>使用方法: <a href="https://github.com/Hunlongyu/vue3-glassmorphism">官网文档</a></p>
       </footer>
     </div>
   </div>
@@ -214,7 +216,10 @@ html,body, #app{
   color: #fff;
 }
 .footer a{
-  color: #fff;
+  color: #fec84d;
   text-decoration: none;
+}
+.color .label{
+  margin-right: 20px;
 }
 </style>

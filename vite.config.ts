@@ -9,6 +9,7 @@ export default defineConfig({
       filename: 'vue3-glassmorphism'
     }
   }), createTypes()],
+  // base: './',
   build: {
     // outDir: 'docs', // 官网
     lib: {
