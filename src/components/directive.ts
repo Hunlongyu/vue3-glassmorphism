@@ -28,7 +28,7 @@ function hex2Rgba (color: string) {
 }
 const onMounted = (el: HTMLElement, binding: DirectiveBinding) => {
   const d = binding.value
-  let color = hex2Rgba(d.color)  
+  let color = hex2Rgba(d.color)
   let blur = d.blur || 3
   let opacity = d.opacity || 0.2
   el.style['background'] = `rgba(${color}, ${opacity})`
@@ -37,7 +37,7 @@ const onMounted = (el: HTMLElement, binding: DirectiveBinding) => {
 
 const onUpdated = (el: HTMLElement, binding: DirectiveBinding) => {
   const d = binding.value
-  let color = hex2Rgba(d.color)  
+  let color = hex2Rgba(d.color)
   let blur = d.blur || 3
   let opacity = d.opacity || 0.2
   el.style['background'] = `rgba(${color}, ${opacity})`
