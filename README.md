@@ -2,7 +2,9 @@
 
 由 Vue3 和 Typescript 编写的透明高斯模糊背景.
 
-[官网 & 示例](https://hunlongyu.github.io/vue3-glassmorphism/)
+[Home & Demo & Github](https://hunlongyu.github.io/vue3-glassmorphism/)
+
+[官网 & 示例 & 国内](http://hunlongyu.gitee.io/vue3-glassmorphism/)
 
 ### 截图
 ![screen.jpg](https://i.loli.net/2021/02/23/841YsaUbeJIfPW7.jpg)
